@@ -1,5 +1,4 @@
 #include <iostream>
-#include<cmath>
 using namespace std;
 
 int main() {
@@ -7,23 +6,22 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--)
-	{
+	{ 
 	    int x,y,z;
-	    cin>>x>>y>>z;
-	    if(z%y==0)
-	    {
-	        cout<<(z/y)*x<<endl;
-	    }
-	    else if(z/y<1)
-	    {
-	        cout<<floor((z/y)*x)+z<<endl;
-	    }
+	    cin>>x>>y>>z; 
+	    
+	    if(x%y==0)
+	    { int a=x/y;
+	    if(a!=0)
+	     cout<<a*z<<endl;
+	     else
+	     cout<<z<<endl;
+	    } 
 	    else
 	    {
-	        cout<<floor((z/y)*x)+z+1<<endl;
+	        int b=x/y+1;
+	        cout<<b*z<<endl;
+	    } 
+	    
 	    }
-
-	}
-
-    	return 0;
 }
